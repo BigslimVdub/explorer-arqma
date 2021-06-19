@@ -69,7 +69,7 @@ if(EXISTS ${ARQMA_BUILD_DIR}/external/unbound/libunbound.a)
   set_property(TARGET libunbound PROPERTY IMPORTED_LOCATION ${ARQMA_BUILD_DIR}/external/unbound/libunbound.a)
 endif()
 
-message(STATUS ${ARQMA_SOURCE_DIR}/build/Linux/${ARQMA_BRANCH})
+message(STATUS ${ARQMA_SOURCE_DIR}/build/${ARQMA_BRANCH})
 
 # include arqma headers
 include_directories(
@@ -77,8 +77,8 @@ include_directories(
   ${ARQMA_SOURCE_DIR}/src/crypto
   ${ARQMA_SOURCE_DIR}/external
   ${ARQMA_SOURCE_DIR}/external/randomarq/src
-  ${ARQMA_SOURCE_DIR}/build/Linux/${ARQMA_BRANCH}/release
-  ${ARQMA_SOURCE_DIR}/build/Linux/${ARQMA_BRANCH}/release/external/libzmq/include
+  ${ARQMA_SOURCE_DIR}/build/${ARQMA_BRANCH}/release
+  ${ARQMA_SOURCE_DIR}/build/${ARQMA_BRANCH}/release/external/libzmq/include
   ${ARQMA_SOURCE_DIR}/external/unbound/libunbound
   ${ARQMA_SOURCE_DIR}/external/easylogging++
   ${ARQMA_SOURCE_DIR}/contrib/epee/include
