@@ -1,4 +1,4 @@
-find_package(Boost 1.62.0 QUIET REQUIRED)
+find_package(Boost 1.71.0 QUIET REQUIRED)
 
 set(mstch_INCLUDE_DIR
       ${PROJECT_SOURCE_DIR}/include CACHE STRING "mstch include directory")
